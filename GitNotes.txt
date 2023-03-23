@@ -147,11 +147,18 @@ $ git rm --cached <filename>: To un-stage newly created file.
 
 $ git reset : It is used to unstage  a file.
 	syntax: git reset HEAD <file-name>
+
+$ git checkout -- <file-name>
+    It will discard the changes.
+$ git branch -M main
+  To change the branch.
 ==================================================
 Steps to push code to github central repository
 ==================================================
 username=soumyaranjanpanda199
+password=Soumya@0146
 token=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
+token=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
 
 1) Create one public repository in git hub (take github repo url)
 
@@ -198,6 +205,37 @@ Note: Git bash will ask our password only for first time. It will save our git c
 
 -> We can check commit history using 'git log' command
 
+
+
+
+======================================================
+git help
+git help <command name>
+git init
+git add
+git add --a
+git commit -m <msg>
+git push
+git reset HEAD <filename>
+git checkout <filename>
+git status
+git rm --cached <filename>
+git remote add origin <repo url>
+git push -u origin <branch-name>
+git log
+======================================================
+
+To check commit history we will use git log command.It will display following details.
+1)commit id
+2)author
+3)timestamp
+4)commit msg
+
+To take existing project from repository to local system we will use clone command.
+syntax: git clone<repo-url>
+Before making any changes to local file, it is very highly recommaned to take changes from
+central repository.To take latestest code from repository we will use git pull command.
+syntax: git pull
 ==================================================
 Steps to commit Maven Project to Github Repository
 ==================================================
