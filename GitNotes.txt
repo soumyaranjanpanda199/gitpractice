@@ -285,8 +285,9 @@ Usecase
 ============
 Git Branches
 ============
-
--> Branches are used to maintain seperate code bases for our project
+->When we create a repository by default master branch will be created.
+->Branches are nothing but code bases.We can create several branches in repository.
+-> Branches are used to maintain seperate code bases for our project.
 
 -> In GiT repository we can create multiple branches
 
