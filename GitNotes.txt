@@ -161,6 +161,7 @@ token=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
 token=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
 token=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
 token=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
+token=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
 
 1) Create one public repository in git hub (take github repo url)
 
@@ -311,6 +312,19 @@ research
 -> To clone particular branch in git repo we will use below command
 
 		$ git clone -b <branch-name> <repo-url>
+=========
+Work Flow
+=========
+->Login into Git Repository.
+->Create develop branch from master branch.
+->Clone develop branch code.
+Note: If we execute git clone repo url it will clone master branch code.
+If we want to clone specific branch code we should execute below command.
+cmd-> git clone -b <branch-name> <repo-url>
+If we want to check , which branch is connected then 
+cmd-> git branch
+
+Note:: It is recommanded to create new branch for our task, so that other developer won't be affected by out code.
 
 ==============
 Branch Merging
@@ -319,6 +333,10 @@ Branch Merging
 => The process of merging changes from one branch to another branch is called as Branch merging
 
 => We will use Pull Request for Branch Merging
+-> When will execute pull request, git hub compare source branch and traget branch
+ and it will confirm can we merge these brances or not.
+ ->If the status is Able to merge , then execute pull request and merge changes.
+ ->After pull request completed, we can delete that new brance which we have created for our story.
 
 ============================
 Steps to do branch merging
@@ -334,6 +352,14 @@ Steps to do branch merging
 
 Note: Once feature branch changes are merged to main branch then we can delete feature branch (if required)
 
+Realtime Scenario
+=================
+Two developer working on Sprint 7.3
+Dilip and Saurav are the developer.
+Dilip working on story HIS-300
+Saurav is working on story HIS-301
+Latest code available in develop branch.
+Two people started dev activity.
 =========================
 What is .gitignore ?
 =========================
@@ -391,7 +417,9 @@ git merge vs git rebase
 
 -> When we are working on particular sprint and we want to merge changes from one branch to another branch then we will use 'git merge' command
 
--> Once sprint-1 is delivered then we want to take latest code of sprint-1 to start sprint-2 development. In this scenario we don't need commit history so we will use 'git rebase' command.
+-> Once sprint-1 is delivered then we want to take latest code of sprint-1 to start sprint-2 development. In this scenario we don't need commit 
+
+   history so we will use 'git rebase' command.
 
 ===========================
 What is git pull command 
